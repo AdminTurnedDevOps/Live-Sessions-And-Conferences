@@ -1,0 +1,3 @@
+name: azure-python-resourcegroup
+runtime: python
+description: Create a resource group with Python
