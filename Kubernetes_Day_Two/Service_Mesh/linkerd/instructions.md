@@ -18,6 +18,13 @@ linkerd install --crds | kubectl apply -f -
 linkerd install | kubectl apply -f -
 ```
 
+5. Install the Linkerd dashboard
+```
+linkerd viz install | kubectl apply -f -
+
+linkerd viz dashboard &
+```
+
 You can also use Helm to install Linkerd
 
 ```

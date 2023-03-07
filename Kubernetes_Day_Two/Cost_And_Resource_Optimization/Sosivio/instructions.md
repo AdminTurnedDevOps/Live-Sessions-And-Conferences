@@ -1,4 +1,4 @@
-**ensure that you have at least a three node cluster**
+**ensure that you have at least a two node cluster**
 
 1. Go to the following page to download Sosivio
 https://www.sosiv.io/app/download
@@ -20,3 +20,8 @@ kubectl port-forward -n sosivio svc/dashboard 8088:8088
 
 Username: admin
 Password: It'll be displayed on the terminal
+
+If you need the password after it's displayed:
+```
+kubectl get secrets/sosivio-admin-otp -n sosivio --template={{.data.password}} | base64 -D
+```
